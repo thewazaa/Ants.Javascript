@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Experiment</title>
+<style>
+	body 
+	{
+		background-color:#AAA;
+		margin:0;
+		padding:0;
+		display: flex;
+		flex-direction: column;
+		height:300px;
+		width: 300px;
+	}
+	h1 
+	{
+		background-color:#BBB;
+		margin:0;
+		padding:0;
+	}
+	#map
+	{
+		margin:0;
+		padding:0;
+		background-color:#FFF;
+		flex-wrap: wrap;
+		flex: 1;
+	}
+</style>
+</head>
+<body>
+<h1>Experiment</h1>
+<canvas id="map"></canvas>
+<script src="Ant.js"></script>
+<script src="TerrainGrain.js"></script>
+<script src="Terrain.js"></script>
+<script src="AntNest.js"></script>
+<script src="Ants.js"></script>
+<script src="Meal.js"></script>
+<script>
+	var test = new Ants("map", 500, 2000, 10);
+	test.start();
+</script>
+</body>
+</html>
